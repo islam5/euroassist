@@ -1,0 +1,22 @@
+﻿<ion-view cache-view="false"  view-title="{{$root.translateWord('Euro Assist')}}">
+  <ion-content>
+    <div class="im-wrapper card">
+      <h4 class=" ">
+        <span class="header-text" ng-bind="$root.translateWord('Welcome To')"></span>
+        <span class="header-text" ng-bind="$root.translateWord('EuroAssistServices')"></span>
+        <span class="header-text red-text" ng-bind="$root.translateWord('Euro Assist')"></span>
+        <span class="header-text" ng-bind="$root.translateWord('Services')"></span>
+      </h4>
+     </div>
+
+   <div class="im-wrapper card">
+     <div ng-include="'templates/en_US/AboutEuroAssistService.html'">
+     </div>
+   </div>
+
+  </ion-content>
+
+  <!--<ion-fab ng-click="nextView()"     >-->
+    <!--<i class="icon ion ion-model-s"></i>-->
+  <!--</ion-fab>-->
+</ion-view>

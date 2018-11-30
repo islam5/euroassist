@@ -1,0 +1,85 @@
+{
+    "title": "An advanced car service club that operates according to European standards",
+    "about": "The club provides its members with many real services that benefit them in everything related to their cars, begin from thinking about buying or getting a car loan and insurance on it, as well as the rescue and assistance program that protects them from the dangers and problems that can be faced on roads",
+    "services": [
+        {
+            "name": "Roadside Assistance program ",
+            "header": "This program covers all unexpected situations for vehicle on road for free: -",
+            "notes": "This Service is provided only through the call center customer service (24 hours 7 days per week) during the accident or when the customer needs the service",
+            "serviceList": [
+                {
+                    "name": "Towing of the vehicle in case of accident",
+                    "details": "Towing of the vehicle in case of accident (causing immobilization to the client’s vehicle)"
+                },
+                {
+                    "name": "Towing of the vehicle in case of breakdown",
+                    "details": "Towing of the vehicle in case of breakdown (accident)"
+                },
+                {
+                    "name": "Removal the Vehicle( return to the ordinary road )",
+                    "details": "Removal the Vehicle( return to the ordinary road )"
+                },
+                {
+                    "name": "Fuel delivery",
+                    "details": "Fuel delivery"
+                },
+                {
+                    "name": "Battery charging",
+                    "details": "Charge the battery"
+                },
+                {
+                    "name": "Tire replacement",
+                    "details": "Replace the damaged tire"
+                },
+                {
+                    "name": "Supply of information",
+                    "details": "providing the customer with required information either which concerns his car or information about (service center, ambulance, hospitals.) if an accident happens"
+                },
+                {
+                    "name": "Relay of urgent messages",
+                    "details": "notify any emergency messages to any person instead of the customer in the event of a malfunction or accident"
+                },
+                {
+                    "name": "Ambulance arrangements",
+                    "details": "Request and follow up the ambulance to the insured passengers and verify the quality of the medical services"
+                }
+            ]
+        },
+        {
+            "name": "Transport of Passengers ( Rescue Passengers )",
+            "header": "In case of accident or breakdown, causing immobilization to the client’s vehicle, according to Euro Club Program the company will take in charge transporting the passengers (up to 4 persons) to the destination chosen by the client",
+            "notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "Accommodation in hotel (Expenses of accommodation)",
+            "header": "In case of accident (in a city far more than 300 KM from the client’s home city), and that causing immobilization to the client’s vehicle which requires remaining in the repair shop for a period in excess of 5 working days (excluding weekends and vacations) for its repair according to certified report in written form ، The company will take in charge the cost of booking a room in a hotel up to 600 EGP per day and up to 3 days ",
+            "notes": "The alternative car service can not be used in the event of utilization of this service (in the same incident)",
+            "serviceList": []
+        },
+        {
+            "name": "Replacement car with driver",
+            "header": "In case of accident, causing immobilization to the client’s vehicle which requires remaining in the repair shop for a period in excess of 5 days (excluding weekends and vacations) for its repair according to certified report in written form. The company will provide to the insured a replacement car with a driver for a period of repairing the car (the car model 2 years ago ),maximum for 3 days",
+            "notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "Emergency medical cover",
+            "header": "In case of accident which causes injuring one or more of the passengers, the company will pay the cost of the emergency medical treatment for the injured persons up to 3,500 EGP per accident with maximum of 5,000 EGP per year .Also, the company will offer discounts from 10% to 20% for the emergency medical treatment in our list of hospitals",
+            "notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "Door To Door Service",
+            "header": "When the client needs to make the regular services for his vehicle, the company provides a professional driver receives the client's car from his home or his office, to do the regular service on behalf of the client. In the authorized service center",
+            "notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "License renewing",
+            "header": "The company could renew the license of the vehicle on behalf of the client without any additional expenses or perquisite, with the commitment of the customer to pay all expenses (receipts) with the value of irregularities",
+            "notes": "Paperwork is received and the delivery of the renewed license or place the client (work or home)",
+            "serviceList": []
+        }
+    ]
+}

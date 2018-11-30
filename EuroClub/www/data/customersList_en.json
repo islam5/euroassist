@@ -1,0 +1,21 @@
+﻿{
+	"header": "The most important customers in Egypt",
+	"fields": [
+		{	
+		"name": "automotive sector",
+		"customers": ["Mercides (natinonal company for cars)","Bavaria for cars, Fored - Egypt", "Peugot, Honda, Daihatsu (Gamil auto)", "Modern Motors ", "Nissan Motor Company (Nissan Motor Co.)"," Suzuki - Shengan - Foton", "Abaza Auto Trade"]
+		},
+		{
+		"name": "insurance companies",
+		"customers": ["The Arab Insurance Group (GIG)","Tokyo Marine Takaful Insurance","Wathaq Takaful Insurance","Royal Insurance","United Insurance"]
+		},
+		{
+		"name": "brokerage firms",
+		"customers": ["Star Brokerage", "United Group", "Consultant", "GiG", "Future Mediation", "Mediation Broker", "Gisco"]
+		},
+		{
+		"name": "Banks",
+		"customers": ["Bank of Alexandria", "Arab Bank", "Egypt Gulf Bank"]
+		}
+	]
+}

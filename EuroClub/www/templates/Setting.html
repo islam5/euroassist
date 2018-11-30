@@ -1,0 +1,38 @@
+﻿<ion-view view-title="{{$root.translateWord('Setting')}}">
+  <ion-content class=" setting im-wrapper">
+
+    <form style="text-align: left;direction: ltr" >
+      <div class="card">
+        <p class="text-center" style="padding-top: 20px;margin-bottom: 0px;border-bottom: 1px solid #e5e5e5;">{{$root.translateWord('Phone Setting')}}</p>
+        <div class="item">
+          <ion-md-input placeholder="{{$root.translateWord('Phone Number')}}" ng-model='setting.phone' highlight-color="energized" type="text"></ion-md-input>
+        </div>
+        <div class="item">
+          <ion-md-input placeholder="{{$root.translateWord('Internet Phone Number')}}" ng-class="setting.twiliophone?'used':''" ng-model='setting.twiliophone' highlight-color="energized" type="text"></ion-md-input>
+        </div>
+		<p class="text-center" style="padding-top: 20px;margin-bottom: 0px;border-bottom: 1px solid #e5e5e5;">{{$root.translateWord('Language Setting')}}</p>
+		<div class="item">
+		  <ion-radio  value="ar" ng-model="setting.language">{{$root.translateWord("Arabic")}}</ion-radio>
+		  <ion-radio  value="en" ng-model="setting.language">{{$root.translateWord("English")}}</ion-radio>
+		</div>
+        <div class="item">
+          <ion-md-input placeholder="free vodafone 1" ng-class="setting.vodafone?'used':''" ng-model='setting.vodafone' highlight-color="energized" type="text"></ion-md-input>
+        </div>
+        <div class="item">
+          <ion-md-input placeholder="free orange me 2" ng-class="setting.orange?'used':''" ng-model='setting.orange' highlight-color="energized" type="text"></ion-md-input>
+        </div>
+        <div class="item">
+          <ion-md-input placeholder="free etisalat me 3" ng-class="setting.etisalat?'used':''" ng-model='setting.etisalat' highlight-color="energized" type="text"></ion-md-input>
+        </div>
+        <div class="item">
+         <div class="row">
+           <button class="button button-small col-offset-25 col-offset-25 button-dark" ng-click="save()">
+             {{$root.translateWord("Save Setting")}}
+           </button>
+         </div>
+        </div>
+      </div>
+    </form>
+
+  </ion-content>
+</ion-view>

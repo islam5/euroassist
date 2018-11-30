@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Servie1",
+		"description": "Service1 Details",
+		"icon": "img/logo.png",
+		"thumbnail": "item-thumbnail-left",
+		"URL": "Angular Boot Camp"
+	},
+	{
+		"name": "Service2",
+		"description": "Service2 Details",
+		"icon": "img/logo.png",
+		"thumbnail": "item-thumbnail-right",
+		"URL": "Angular Boot Camp"
+	}
+]

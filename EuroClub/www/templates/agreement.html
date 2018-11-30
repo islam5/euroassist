@@ -1,0 +1,66 @@
+﻿
+<ion-view  class="has-background-image" view-title="{{$root.translateWord('Service Agreement')}}">
+
+     <ion-scroll zooming="true" class="has-header" direction="y" style=" height: 75%">
+    <div class="row  global-text text-lang"  >
+      <div class="col" style="margin-top: 30px;padding-bottom: 30px">
+        <p class='bold' ng-bind="$root.translateWord('agree1')">
+
+        </p>
+        <p class='bold' ng-bind="$root.translateWord('agree2')">
+
+        </p>
+        <p class='bold' ng-bind="$root.translateWord('agree3')">
+
+        </p>
+
+        <p class='bold' ng-bind="$root.translateWord('agree4')">
+
+        </p>
+
+        <p class='bold' ng-bind="$root.translateWord('agree5')">
+
+        </p>
+        <p class='bold notice' ng-bind="$root.translateWord('agree6')">
+
+        </p>
+        <p class='bold' >
+
+          <span class="notice" ng-bind="$root.translateWord('agree7')"></span>
+
+        </p>
+        <p class='bold' ng-bind="$root.translateWord('agree8')">
+
+        </p>
+        <p class='bold' ng-bind="$root.translateWord('agree9')">
+
+        </p>
+        <!--<p class='bold' ng-bind="$root.translateWord('agree10')">-->
+
+        <!--</p>-->
+
+
+      </div>
+    </div>
+      </ion-scroll>
+    <div class=" row  "   style="padding: 5px">
+      <div class="list col" stylse="position: fixed;bottom: 0px">
+        <div class="row">
+          <button  ng-click="goApp()" class="button col button-raised button-assertive  ">
+            {{$root.translateWord('Accept')}}
+          </button>
+        </div>
+        <div class="row" style="margin-top: 15px">
+          <button  ng-click="exit()" style="
+    background: #a7a5a5;
+" class="button col button-raised   ">
+            {{$root.translateWord('Decline')}}
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+
+</ion-view>

@@ -1,0 +1,41 @@
+﻿<ion-view cache-view="false"  cache-view="false" view-title="{{$root.translateWord('My Location')}}">
+
+
+<!--<ion-content style="background: rgba(239, 237, 237, 0.58)">-->
+  <div   map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBDck1kcOflzZdQER46oGBevaXD3ehqLkU&language=ar">
+    <ng-map    id="mapid" on-click='clickMap(event)' on-dragstart="clickddMap(event)"  center="[26.8206, 30.8025]"  center="current" class="scroll-content map ionic-scroll  has-header"  data-tap-disabled="true" default-style="false"
+               zoom="11" map-type-control-options="{
+      mapTypeIds: [],
+      position:'BOTTOM_LEFT',
+      style: 'DROPDOWN_MENU'
+    }">
+
+      <shape id="circle" name="circle" centered="true"
+             stroke-color='#FF0000' fill-color="#08a4b5" stroke-opacity="0.8"stroke-weight="2"
+               radius="150" editable="true"   ></shape>
+
+      <marker    centered="true"></marker>
+
+    </ng-map>
+
+  </div>
+  <div class="map-div-lab row " id='mapoverlab'ng-click="smallMap()"  >
+
+    <div class="list col"  >
+      <div class="  item">
+        <button ng-click="send()" class="button col button-raised button-assertive icon ion-flash ink-dark">{{$root.translateWord('Send a rescue request')}}</button>
+      </div>
+      <div class="  item">
+        <button ng-click="cancel()" class="button col     button-grey   ">{{$root.translateWord('Cancel')}}</button>
+      </div>
+      <!--<div class="  item">-->
+        <!--<button ng-click="smsCallMe()" class="button col     button-grey   ">{{$root.translateWord('Call Me')}}</button>-->
+      <!--</div>-->
+    </div>
+
+  </div>
+<!--</ion-content>-->
+
+
+
+ </ion-view>

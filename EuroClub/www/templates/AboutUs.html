@@ -1,0 +1,60 @@
+﻿<ion-view cache-view="false"  class="has-background-image" view-title="{{$root.translateWord('About Us')}}">
+
+  <ion-content>
+    <div class="row  text-lang  ">
+
+      <p class="col bold" style="margin-bottom: 10px;margin-top:10px" ng-bind="$root.translateWord('EuroAboutUs')">
+thanks alot
+      </p>
+
+    </div>
+    <div class="row text-lang">
+      <div class="col">
+        <p style="margin-bottom: 5px;" class="bold" ng-bind="$root.translateWord('AppFeaturesLabel')"></p>
+        <p  style="margin-bottom: 5px;" ng-bind="$root.translateWord('APF1')" class="bold">
+
+        </p>
+        <p style="margin-bottom: 5px;" ng-bind="$root.translateWord('APF2')" class="bold">
+
+        </p>
+        <p style="margin-bottom: 5px;" ng-bind="$root.translateWord('APF3')" class="bold">
+
+        </p>
+        <!--<p ng-bind="$root.translateWord('APF4')">-->
+
+        <!--</p>-->
+
+
+       </div>
+    </div>
+  </ion-content>
+ <div class=" row  global-text " style="padding: 5px">
+   <div class="list col" style="position: fixed;bottom: 0px">
+     <div class="row">
+       <span ng-bind="$root.translateWord('Land line')"></span>
+       <span>:</span>
+       <a style=" direction: ltr;" >+2023301141</a>
+     </div>
+     <div class="row">
+       <span ng-bind="$root.translateWord('E-mail')"></span>
+       <span>:</span>
+       <span><a style="color: #002a80;text-decoration: underline" ng-click="window.open('mailto:club@euro-assist.com?Subject=[EuroClubRescue]FeedBack', '_system')" href="mailto:club@euro-assist.com?Subject=[EuroClubRescue]FeedBack" target="_system">club@euro-assist.com</a></span>
+     </div>
+     <div class="row">
+       <span ng-bind="$root.translateWord('Website')"></span>
+       <span>:</span>
+       <span><a ng-click="link()" style="color: #002a80;text-decoration: underline" href="http://www.euroclub.com.eg" target="_system">www.euroclub.com.eg</a></span>
+     </div>
+     <div class="row">
+       <button  ng-click="contact()" class="button col button-raised button-assertive icon ion-email">
+         {{$root.translateWord('Contact Euro Club')}}
+       </button>
+     </div>
+     <div class="row">
+        <ng-copy   style="font-size: 10px">{{$root.translateWord('copyright') }}&nbsp; &nbsp; &copy; 2017</ng-copy>
+     </div>
+
+   </div>
+ </div>
+
+</ion-view>

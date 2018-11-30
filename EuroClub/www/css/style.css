@@ -1,0 +1,869 @@
+
+
+/**
+ * Grid
+ * --------------------------------------------------
+ * Using flexbox for the grid, inspired by Philip Walton:
+ * http://philipwalton.github.io/solved-by-flexbox/demos/grids/
+ * By default each .col within a .row will evenly take up
+ * available width, and the height of each .col with take
+ * up the height of the tallest .col in the same .row.
+ */
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  width: 100%; }
+
+.row-wrap {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.row-no-padding {
+  padding: 0; }
+.row-no-padding > .col {
+  padding: 0; }
+
+.row + .row {
+  margin-top: -5px;
+  padding-top: 0; }
+
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  padding: 5px;
+  width: 100%; }
+
+/* Vertically Align Columns */
+/* .row-* vertically aligns every .col in the .row */
+.row-top {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start; }
+
+.row-bottom {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end; }
+
+.row-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; }
+
+.row-stretch {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch; }
+
+.row-baseline {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  align-items: baseline; }
+
+/* .col-* vertically aligns an individual .col */
+.col-top {
+  -webkit-align-self: flex-start;
+  -moz-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+.col-bottom {
+  -webkit-align-self: flex-end;
+  -moz-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+.col-center {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+/* Column Offsets */
+.col-offset-10 {
+  margin-left: 10%; }
+
+.col-offset-20 {
+  margin-left: 20%; }
+
+.col-offset-25 {
+  margin-left: 25%; }
+
+.col-offset-33, .col-offset-34 {
+  margin-left: 33.3333%; }
+
+.col-offset-50 {
+  margin-left: 50%; }
+
+.col-offset-66, .col-offset-67 {
+  margin-left: 66.6666%; }
+
+.col-offset-75 {
+  margin-left: 75%; }
+
+.col-offset-80 {
+  margin-left: 80%; }
+
+.col-offset-90 {
+  margin-left: 90%; }
+
+/* Explicit Column Percent Sizes */
+/* By default each grid column will evenly distribute */
+/* across the grid. However, you can specify individual */
+/* columns to take up a certain size of the available area */
+.col-10 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 10%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 10%;
+  -ms-flex: 0 0 10%;
+  flex: 0 0 10%;
+  max-width: 10%; }
+
+.col-20 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 20%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 20%;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%; }
+
+.col-25 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+.col-33, .col-34 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33.3333%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 33.3333%;
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%; }
+
+.col-40 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 40%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 40%;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+  max-width: 40%; }
+
+.col-50 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+.col-60 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 60%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 60%;
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%;
+  max-width: 60%; }
+
+.col-66, .col-67 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 66.6666%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 66.6666%;
+  -ms-flex: 0 0 66.6666%;
+  flex: 0 0 66.6666%;
+  max-width: 66.6666%; }
+
+.col-75 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 75%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 75%;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.col-80 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 80%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 80%;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  max-width: 80%; }
+
+.col-90 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 90%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 90%;
+  -ms-flex: 0 0 90%;
+  flex: 0 0 90%;
+  max-width: 90%; }
+
+/* Responsive Grid Classes */
+/* Adding a class of responsive-X to a row */
+/* will trigger the flex-direction to */
+/* change to column and add some margin */
+/* to any columns in the row for clearity */
+@media (max-width: 567px) {
+  .responsive-sm {
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .responsive-sm .col, .responsive-sm .col-10, .responsive-sm .col-20, .responsive-sm .col-25, .responsive-sm .col-33, .responsive-sm .col-34, .responsive-sm .col-50, .responsive-sm .col-66, .responsive-sm .col-67, .responsive-sm .col-75, .responsive-sm .col-80, .responsive-sm .col-90 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 15px;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%; } }
+
+@media (max-width: 767px) {
+  .responsive-md {
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .responsive-md .col, .responsive-md .col-10, .responsive-md .col-20, .responsive-md .col-25, .responsive-md .col-33, .responsive-md .col-34, .responsive-md .col-50, .responsive-md .col-66, .responsive-md .col-67, .responsive-md .col-75, .responsive-md .col-80, .responsive-md .col-90 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 15px;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%; } }
+
+@media (max-width: 1023px) {
+  .responsive-lg {
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .responsive-lg .col, .responsive-lg .col-10, .responsive-lg .col-20, .responsive-lg .col-25, .responsive-lg .col-33, .responsive-lg .col-34, .responsive-lg .col-50, .responsive-lg .col-66, .responsive-lg .col-67, .responsive-lg .col-75, .responsive-lg .col-80, .responsive-lg .col-90 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 15px;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%; } }
+
+
+/* Empty. Add your own CSS if you like */
+/* Utilities */
+
+.link {
+    color: #116262;
+    font-weight: bold;
+}
+
+h4 {
+    color: #116262;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+h4:first-child {
+    border-top: none;
+    padding-top: initial;
+}
+
+.title-bordered {
+    border-top: solid 2px #bbb;
+    padding-top: 30px;
+}
+
+p {
+    color: #555;
+    margin: 0 0 25px;
+}
+
+.no-border {
+    border: none;
+}
+
+.static {
+    position: static;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.border-top {
+    border-top: solid 1px #ccc;
+    padding-top: 30px;
+}
+
+.blue-grey-900 {
+    background-color: #263238 !important;
+    color: #fff;
+}
+/* Menu */
+
+.menu .bar.bar-header.expanded {
+    background-image: url('../img/material-graphite.jpg');
+    background-size: 120%;
+    background-position: 0%;
+    transition: all .5s ease-in-out;
+}
+
+.menu.menu-left * {
+    font-weight: bold;
+}
+
+.item-radio input:checked ~ .item-content {
+    background: transparent;
+}
+
+.menu-open .ion-navicon {
+    transform: rotate(-360deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-open .ion-navicon:before {
+    content: "\f2ca";
+}
+
+.item.item-radio .radio-icon {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.item.item-radio:active .radio-icon {
+    opacity: 0;
+    transform: scale(1.6);
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.directions.button-bar {
+    margin: 0 auto;
+    width: 33.333%;
+}
+
+.directions.button-bar button {
+    line-height: 26px;
+}
+
+.ion-arrow-right-c.top-left:before {
+    transform: rotate(-135deg);
+}
+
+.ion-arrow-right-c.top-right:before {
+    transform: rotate(-45deg);
+}
+
+.ion-arrow-right-c.bottom-left:before {
+    transform: rotate(-225deg);
+}
+
+.ion-arrow-right-c.bottom-right:before {
+    transform: rotate(45deg);
+}
+
+#modal {
+    background-color: #ef4e3a;
+    border-radius: 100%;
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    height: 50%;
+    bottom: 0;
+    opacity: 0;
+    width: 700px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.expand #modal {
+    background-color: #DBDBDB;
+    border-radius: 0;
+    border-top: solid 4px #ef4e3a;
+    opacity: 1;
+    z-index: 9;
+}
+/* CODE */
+
+.code {
+    color: #333;
+    font-family: monospace;
+    padding: 10px;
+    white-space: pre;
+}
+
+.code-wrapper {
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.code-wrapper::before {
+    color: #1B5E20;
+    font-family: "Ionicons";
+    speak: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: '\f216 ';
+}
+
+.code-wrapper.active::before {
+    content: '\f207 ';
+}
+
+.code-wrapper .toggle {
+    color: #4CAF50;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 8px;
+    text-decoration: underline;
+}
+
+.code-wrapper .code {
+    opacity: 0;
+    margin-top: -20px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: 0.1s all ease-in-out;
+    z-index: 9999999999;
+}
+
+.code-wrapper.code-wrapper-last .code {
+    position: relative;
+}
+
+.code-wrapper.active .code {
+    background: #f9f9f9;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    left: 16px;
+    height: initial;
+    margin-top: 15px;
+    padding: 15px;
+    right: 16px;
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
+    width: initial;
+}
+
+.popover {
+    left: initial !important;
+    right: 16px !important;
+    top: 16px !important;
+}
+.platform-android .popover{
+margin-top:10px;
+}
+
+ion-content.scroll-content{
+  background: rgba(214, 210, 210, 0.55);
+}
+.bar.bar-subheader.bar-stable.static.text-center{
+  margin-top: 16px;
+  background:rgb(245, 244, 244)
+}
+.bar.bar-stable .title {
+  color: #b71c1c;
+}
+a.item.item-thumbnail-left,a.item.item-thumbnail-right {
+  background: #2879bd;
+  margin: 10px 0;
+  border-radius: 20px;
+  overflow: visible;
+  color: white;
+}
+.about .list a.item.item-thumbnail-left,.about .list a.item.item-thumbnail-right{
+  border-radius: 20px;
+
+}
+.about .list a img{
+  box-shadow: none;
+}
+a.item.item-thumbnail-left img{
+  position: absolute;
+  top: -8px;
+  left: -5px;
+  height: 200px;
+}
+
+a.item.item-thumbnail-right img{
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  height: 200px;
+}
+.text-white,.item p{
+  color:white;
+}
+.list .im-wrapper{
+overflow: hidden;
+}
+
+input.md-input{
+  font-size:17px;
+  border-bottom: 1px solid  #ccc;
+  letter-spacing:0px;
+}
+
+.item-md-label input:focus ~ .input-label, .item-md-label input.used ~ .input-label  {
+  color: rgba(239, 71, 58, 0.81);
+  font-weight: 600;
+
+}
+form  .list,form  .card{
+  background-color:white ;
+}
+.item .item-thumbnail-left h2 {
+  color :white;
+}
+.button.button-fab.button-fab-top-right, .bar .button.button-fab.button-fab-top-right{
+  right: 2px;
+}
+button.fab-bottom-up1.fab.animated {
+  bottom: 80px;
+}
+button.fab-bottom-right-up1.fab.animated {
+  right: 50px;
+  bottom: 80px;
+}
+.popup-container .popup{
+  width: 80%;
+}
+
+.fab-bottom-left,.fab-bottom-left ul{
+  left:16px;
+}
+#floating-menu{
+  right:50px
+}
+.loader{
+  height: auto;
+}
+.fab{
+  background-color: rgb(56, 81, 245);
+}
+.popup-vertical-buttons button
+{
+  min-width: 100%;
+  margin-bottom: 5px;
+}
+.popup-vertical-buttons .popup-buttons
+{
+  display: block;
+}
+ion-item.dark.item-text-wrap.item.ng-binding.active {
+  background: #c7c2c2;
+}
+.platform-android .popover  a.item.item-bar{
+  padding: 7px;
+   min-height: inherit;
+   border-bottom: 1px solid darkgrey;
+}
+.platform-ios .popover  a.item.item-bar{
+  padding: 7px;
+  min-height: inherit;
+  border-bottom: 1px solid darkgrey;
+}
+.popover  a.item.item-bar{
+  padding: 7px;
+  min-height: inherit;
+  border-bottom: 1px solid darkgrey;
+}
+.popover .item:last-child {
+  border-bottom: 1px solid darkgrey;
+
+}
+.error-container {
+  margin: 5px 0;
+}
+
+.error-container:last-child {
+    margin: 5px 0 0;
+}
+
+.error {
+  padding: 10px 16px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #555;
+  vertical-align: middle;
+}
+
+.error i {
+  font-size: 24px;
+  color: #B83E2C;
+  vertical-align: middle;
+}
+
+.last-error-container > .error {
+  padding: 10px 16px 0;
+}
+
+.has-errors {
+  border-bottom: 3px solid #B83E2C;
+}
+
+.no-errors {
+  /*border-bottom: 3px solid green;*/
+}
+label.has-errors,label.no-errors{
+  padding-bottom: 0px;
+}
+
+.no-errors .item-md-label .highlight-energized{
+  background: transparent;
+}
+
+.has-errors .item-md-label .highlight-energized{
+  background:transparent;
+}
+ion-view.has-background-image ion-content.scroll-content.ionic-scroll.has-header
+,ion-view.has-background-image.background-image{
+  background: #fdfdfd;
+  background-image: url('../img/background.png');
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ar_EG ion-content *:not(button),.ar_EG .global-text *:not(button)   {
+  text-align: right;
+  direction: rtl;
+}
+.ar_EG ion-content.setting *:not(button) {
+  text-align: left;
+  direction: ltr;
+}
+
+
+.list .item{
+  text-align: inherit;
+}
+
+*{
+  font-family: sans-serif;
+}
+
+.row p{
+  margin-bottom: 5px;
+}
+.map {
+  -webkit-transition: width 2s; /* Safari */
+ /* transition: height 2s;*/
+}
+.button.button-grey{
+  background-color: #b9b8b8
+}
+
+
+.text-lang.bold p{
+  font-weight: 600;
+}
+.text-lang p.bold{
+  font-weight: 600;
+}
+.text-lang.no-padding p{
+
+}
+.map-div-lab{
+  background: white;
+  height: 700px;
+  margin-top: 15px;
+  position: fixed;
+  transition: top 2s;
+  top: 200px;
+}
+ion-content p{
+  /*padding: 10px;*/
+}ion-item.item.item-complex {
+   height: 35px;
+ }
+.popover-backdrop.active {
+  background: transparent;
+}
+button.disabled{
+  background-color: #290101;
+
+}
+
+body * {
+ font-size:15px;
+  font-weight: 300;
+  color: black;
+  font-family: initial;
+}
+
+.text-lang p, .text-lang span,.popup-container p {
+  font-size: 1.08em;
+  line-height: 1.3em;
+  font-family: initial;
+  font-weight: 400;
+  word-spacing: 0.08em;
+  margin-bottom: 15px;
+}
+
+.text-lang h1,.popup-container h1{
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+.popup-container h5{
+   margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: 300;
+ }
+.popup-container h1 {
+  margin: 0;
+}
+.header-text{
+  font-size: 1.3em;
+  font-weight: 400;
+}
+.sub-header-text{
+  font-size: 1.15em;
+  font-weight: 300;
+}
+.custom-placeholder:placeholder{
+
+    font-size: 8px; /*sets placeholder font size*/
+    text-align: justify;
+  
+}
+.europeanstandard-text{
+  font-size: 1em;
+  font-weight: 300;
+}
+.red-text{
+  color:#e40b0b;
+}
+button.button.col.button,.popup-container  button.button.col.button {
+  font-size: 1.25em;
+  text-transform: none;
+}
+
+
+ion-nav-bar .title.title-center.header-item {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.text-lang .ignore-inline-block .item-md-label .input-label {
+  display: inline;
+}
+.text-lang .ignore-inline-block .item-md-label .input-label {
+  display: table;
+}
+.text-lang ion-item a.item-content.ng-binding,
+.text-lang ion-item.dark.item-text-wrap.item.ng-binding,
+.text-lang ion-item.item.ng-binding{
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.ar_EG .text-lang ion-item a.item-content.ng-binding,
+.ar_EG  .text-lang ion-item.dark.item-text-wrap.item.ng-binding,
+.ar_EG  .text-lang ion-item.item.ng-binding{
+  text-align: right;
+}
+
+.text-lang ion-item.item-accordion.item-text-wrap.item.ng-binding{
+  font-size: 1.11em;
+}
+.text-lang ion-item {
+  /*height: 4.5em;*/
+}
+.text-lang ion-item.card.item-text-wrap.dark.item.item-complex {
+  height: 4em;
+}
+.popup-container button.button.ng-binding  {
+  font-size: 1.05em;
+}
+.popup-container .popup {
+  width: 90%;
+}
+.text-lang input.md-input {
+  font-size: 1.25em;
+}
+
+.text-lang .item-md-label .input-label{
+  font-size: 1.1em;
+  display: inline-block;
+  margin: 0 10px;
+}
+ion-popover-view a.item.item-bar.ng-binding {
+  font-size: 1.07em;
+  font-weight: 300;
+  font-family: initial;
+}
+span.notice{
+  color:#e42112;
+  font-weight: 600;
+}
+
+/*.ar_EG .item .item-md-label .input-label {*/
+/*right: 20px;*/
+/*}*/

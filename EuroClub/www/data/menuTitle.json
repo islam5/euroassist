@@ -1,0 +1,18 @@
+[
+	{
+		"name": "Euro Assist",
+		"URL": "#/app/welcome"
+	},
+	{
+		"name": "User Form",
+		"URL": "#/app/userform/NONE"
+	},
+	{
+		"name": "Euro Assist Services",
+		"URL": "#/app/services/NONE"
+	},
+	{
+		"name": "Customers",
+		"URL": "#/app/customers"
+	}
+]

@@ -1,0 +1,33 @@
+﻿<ion-view cache-view="false" class="has-background-image" view-title="{{' '+$root.translateWord('Club Euro2')}}">
+  <ion-content>
+    <div class="im-wrapper ">
+      <h4 class=" ">
+        <span class="header-text" ng-bind="$root.translateWord('Welcome To')"></span>
+        <span class="header-text red-text" ng-bind="$root.translateWord('Club Euro2')"></span>
+      </h4>
+      <h5 class=" sub-header-text " ng-bind="$root.translateWord('The Pioneer auto club in 12 countries')"></h5>
+      <span class="sub-header-text red-text" ng-bind="$root.translateWord('Club Euro2')"></span>
+      <span class="europeanstandard-text" ng-bind="$root.translateWord('is an auto club works according to European standards')"> </span>
+      <br/>
+    </div>
+
+
+
+  </ion-content>
+  <div class=" row  global-text " style="padding: 5px">
+    <div class="list col" style="position: fixed;bottom: 0px">
+
+      <div class="row">
+        <button ng-click="goIsMember()" class="button col button-raised button-assertive   ink-dark">{{$root.translateWord('Next')}}</button>
+
+      </div>
+
+      <div class="row" style="margin-top: 10px">
+        <button ng-click="goServices()" class="button col button-raised button-assertive   ink-dark">
+          {{$root.translateWord('More About Euro Club Services')}}</button>
+
+      </div>
+    </div>
+  </div>
+
+</ion-view>

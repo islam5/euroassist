@@ -1,0 +1,44 @@
+﻿<ion-view  cache-view="false"  class="has-background-image" view-title="{{$root.translateWord('Help Request')}}">
+
+  <ion-content>
+    <div class="row  text-lang  ">
+
+      <h1 class="col" style="margin-bottom: 10px;margin-top:10px">
+        <span ng-bind="$root.translateWord('Welcome')">  </span>
+        <span ng-if="userName=='VisitorClub#'" ng-bind="$root.translateWord('VisitorClub#')"> </span>
+        <span ng-if="userName!='VisitorClub#'" ng-bind="userName"> </span>
+
+      </h1>
+
+    </div>
+    <div class="row text-lang  ">
+      <div class="col">
+        <p ng-bind="$root.translateWord('helpRequestP1')">
+
+        </p>
+
+        <p ng-bind="$root.translateWord('helpRequestP2')">
+
+        </p>
+
+        <p ng-bind="$root.translateWord('helpRequestP3')">
+
+        </p>
+
+        <p style="margin-top: 10px">
+            <span class="notice" ng-bind="$root.translateWord('helpRequestNotice')">
+
+            </span>
+        </p>
+      </div>
+    </div>
+  </ion-content>
+  <div class="row" style="position: fixed;bottom: 0px">
+    <button ng-click="getCurrentLocation()" class="button col button-raised button-assertive icon ion-flash ink-dark">
+      {{$root.translateWord('Help Request')}}
+    </button>
+
+  </div>
+
+
+</ion-view>

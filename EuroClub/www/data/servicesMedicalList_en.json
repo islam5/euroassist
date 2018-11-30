@@ -1,0 +1,60 @@
+{
+    "title": "An advanced service car club that operates according to European standards",
+    "about": "The club offers back-to-back areas of basic services that will benefit them in everything related to their vehicles, starting with a four-wheel drive",
+    "services": [
+        {
+            "name": "ِAccess to direct medical provider networks.",
+            "Header": "",
+            "Notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "Claims Handling",
+            "Header": "",
+            "Notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "Cost control",
+            "Header": "",
+            "Notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "Emergency and planned Medical assistance",
+            "Header": "",
+            "Notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "Fraud investigation",
+            "Header": "",
+            "Notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "Air Ambulance",
+            "Header": "",
+            "Notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "Check ups",
+            "Header": "",
+            "Notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "Medical evacuation / Repatriation",
+            "Header": "",
+            "Notes": "",
+            "serviceList": []
+        },
+        {
+            "name": "Repatriation of mortal remains",
+            "Header": "",
+            "Notes": "",
+            "serviceList": []
+        }
+    ]
+}

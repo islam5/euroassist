@@ -1,0 +1,134 @@
+﻿<ion-view cache-view="false"  view-title="{{$root.translateWord('Registration Form Title')}}">
+  <ion-content class="im-wrapper">
+
+    <form name='form.name'>
+
+      <div class="card text-lang">
+        <div class="text-center" style="padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #e5e5e5;
+">  <h1 class="text-center" style="padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+ ">{{$root.translateWord('How to contract with company')}}</h1>
+        </div>
+
+        <div class="item">
+          <label class="row"
+                 ng-class="{ 'has-errors' : form.name.FullName.$invalid && form.name.$submitted, 'no-errors' : form.name.FullName.$valid&& form.name.$submitted}">
+            <ion-md-input   ng-model="user.FullName" name="FullName" placeholder="{{$root.translateWord('Company\'s Name')}}"
+                          highlight-color="energized" type="text"></ion-md-input>
+          </label>
+
+          <div class="error-container last-error-container"
+               ng-show="form.name.FullName.$error &&form.name.$submitted
+                " ng-messages="form.name.FullName.$error">
+            <div ng-messages-include="templates/error-list.html"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <label class="row"
+                 ng-class="{ 'has-errors' : form.name.PhoneNumber.$invalid && form.name.$submitted, 'no-errors' : form.name.PhoneNumber.$valid&& form.name.$submitted}">
+            <ion-md-input ng-required="true"  ng-model="user.PhoneNumber" name="PhoneNumber" placeholder="{{$root.translateWord('Phone Number')}}"
+                          highlight-color="energized" type="text"></ion-md-input>
+          </label>
+
+          <div class="error-container last-error-container"
+               ng-show="form.name.PhoneNumber.$error &&form.name.$submitted
+                " ng-messages="form.name.PhoneNumber.$error">
+            <div ng-messages-include="templates/error-list.html"></div>
+          </div>
+        </div>
+
+        <div class="item">
+          <label class="row"
+                 ng-class="{ 'has-errors' : form.name.Address.$invalid && form.name.$submitted, 'no-errors' : form.name.Address.$valid&& form.name.$submitted}">
+            <ion-md-input id="test"   ng-model="user.Address" name="Address" placeholder="{{$root.translateWord('Address')}}" highlight-color="energized"
+                          type="text"></ion-md-input>
+          </label>
+
+          <div class="error-container last-error-container"
+               ng-show="form.name.Address.$error &&form.name.$submitted
+                " ng-messages="form.name.Address.$error">
+            <div ng-messages-include="templates/error-list.html"></div>
+          </div>
+        </div>
+        <!--<div class="item">-->
+          <!--<label class="row"-->
+                 <!--ng-class="{ 'has-errors' : form.name.AddressMembership.$invalid && form.name.$submitted, 'no-errors' : form.name.AddressMembership.$valid&& form.name.$submitted}">-->
+            <!--<ion-md-input    ng-model="user.AddressMembership" name="AddressMembership" placeholder="{{$root.translateWord('AddressMembership')}}" highlight-color="energized"-->
+                          <!--type="text"></ion-md-input>-->
+          <!--</label>-->
+
+          <!--<div class="error-container last-error-container"-->
+               <!--ng-show="form.name.AddressMembership.$error &&form.name.$submitted-->
+                <!--" ng-messages="form.name.AddressMembership.$error">-->
+            <!--<div ng-messages-include="templates/error-list.html"></div>-->
+          <!--</div>-->
+        <!--</div>-->
+      
+
+      
+        <div class="item">
+          <label class="row"
+                 ng-class="{ 'has-errors' : form.name.email.$invalid && form.name.$submitted, 'no-errors' : form.name.email.$valid&& form.name.$submitted}">
+            <ion-md-input   ng-model="user.email" name="email" placeholder="{{$root.translateWord('E-Mail')}}" highlight-color="energized"
+                          ></ion-md-input>
+          </label>
+
+          <div class="error-container last-error-container"
+               ng-show="form.name.email.$error &&form.name.$submitted
+                " ng-messages="form.name.email.$error">
+            <div ng-messages-include="templates/error-list.html"></div>
+          </div>
+        </div>
+
+
+          <div class="item">
+          <label class="row"
+                 ng-class="{ 'has-errors' : form.name.notes.$invalid && form.name.$submitted, 'no-errors' : form.name.notes.$valid&& form.name.$submitted}">
+            <ion-md-input   ng-model="user.notes" name="notes" placeholder="{{$root.translateWord('Notes')}}" highlight-color="energized"
+                          ></ion-md-input>
+          </label>
+
+          <div class="error-container last-error-container"
+               ng-show="form.name.notes.$error &&form.name.$submitted
+                " ng-messages="form.name.notes.$error">
+            <div ng-messages-include="templates/error-list.html"></div>
+          </div>
+        </div>
+        <!-- 
+        
+        <div class="item">
+          <label class="row"
+                 ng-class="{ 'has-errors' : form.name.ChasisNumber.$invalid && form.name.$submitted, 'no-errors' : form.name.ChasisNumber.$valid&& form.name.$submitted}">
+            <ion-md-input   ng-model="user.ChasisNumber"  name="ChasisNumber"
+                          placeholder="{{$root.translateWord('Chasis Number')}}"
+                          highlight-color="energized" type="text"></ion-md-input>
+          </label>
+
+          <div class="error-container last-error-container"
+               ng-show="form.name.ChasisNumber.$error &&form.name.$submitted
+                " ng-messages="form.name.ChasisNumber.$error">
+            <div ng-messages-include="templates/error-list.html"></div>
+          </div>
+        </div> -->
+        <div class="item">
+          <div class="row" style="
+    width: 150px;
+    margin: 0 auto;
+">
+            <button class="button   button-raised button-assertive  col   " ng-click="saveMedicalUser()">
+              {{$root.translateWord("Send")}}
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </form>
+
+  </ion-content>
+</ion-view>

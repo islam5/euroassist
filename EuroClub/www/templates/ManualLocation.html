@@ -1,0 +1,88 @@
+﻿<form  novalidate=""  name="form.manual">
+
+  <div class="card">
+    <p class="text-center" style="
+    padding-top: 20px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #e5e5e5;
+">{{$root.translateWord('Your Location')}}</p>
+
+    <div class="item" ng-if="location.lat">
+      <label ng-bind="location.lat" placeholder="Latitude"   highlight-color="energized"
+             type="text"></label>
+    </div>
+    <div class="item" ng-if="location.lng">
+      <label ng-bind="location.lng" placeholder="Longitude"  highlight-color="energized"
+             type="text"></label>
+    </div>
+
+    <div class="item">
+      <label class="row"
+             ng-class="{ 'has-errors' : form.manual.City.$invalid && form.manual.$submitted, 'no-errors' : form.manual.City.$valid&& form.City.$submitted}">
+        <ion-md-input ng-model="manualLocation.city" ng-required="true" placeholder="{{$root.translateWord('City')}}" name="City"
+                      highlight-color="energized" type="text"></ion-md-input>
+       </label>
+
+      <div class="error-container last-error-container"
+           ng-show="form.manual.City.$error &&form.manual.$submitted
+                " ng-messages="form.manual.City.$error">
+        <div ng-messages-include="templates/error-list.html"></div>
+      </div>
+    </div>
+    <div class="item">
+      <label class="row"
+             ng-class="{ 'has-errors' : form.manual.street.$invalid && form.manual.$submitted, 'no-errors' : form.manual.street.$valid&& form.manual.$submitted}">
+        <ion-md-input ng-required="true" ng-model="manualLocation.street" name="street"  placeholder="{{$root.translateWord('Street')}}" highlight-color="energized"
+                      type="text"></ion-md-input>
+      </label>
+
+      <div class="error-container last-error-container"
+           ng-show="form.manual.street.$error &&form.manual.$submitted
+                " ng-messages="form.manual.street.$error">
+        <div ng-messages-include="templates/error-list.html"></div>
+      </div>
+    </div>
+    <div class="item">
+      <label class="row"
+             ng-class="{ 'has-errors' : form.manual.mark.$invalid && form.manual.$submitted, 'no-errors' : form.manual.mark.$valid&& form.manual.$submitted}">
+        <ion-md-input ng-model="manualLocation.mark" name="mark" placeholder="{{$root.translateWord('Remarkable Place')}}"
+                      highlight-color="energized" type="text"></ion-md-input>
+      </label>
+
+      <div class="error-container last-error-container"
+           ng-show="form.manual.mark.$error &&form.manual.$submitted
+                " ng-messages="form.manual.mark.$error">
+        <div ng-messages-include="templates/error-list.html"></div>
+      </div>
+    </div>
+    <div class="item">
+      <label class="row"
+             ng-class="{ 'has-errors' : form.manual.other.$invalid && form.manual.$submitted, 'no-errors' : form.manual.other.$valid&& form.manual.$submitted}">
+        <ion-md-input ng-model="manualLocation.other" name="other" placeholder="{{$root.translateWord('Other')}}"
+                      highlight-color="energized" type="text"></ion-md-input>
+      </label>
+
+      <div class="error-container last-error-container"
+           ng-show="form.manual.other.$error &&form.manual.$submitted
+                " ng-messages="form.manual.other.$error">
+        <div ng-messages-include="templates/error-list.html"></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="row" style="
+    width: 150px;
+    margin: 0 auto;
+">
+        <button class="button button-small button-dark" ng-click="SendManualLocation()">
+          {{$root.translateWord("Send")}}
+        </button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+</form>
+

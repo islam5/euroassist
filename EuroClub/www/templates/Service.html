@@ -1,0 +1,24 @@
+<ion-view view-title="{{$root.translateWord(serviceName)}}" >
+	<ion-content class="has-header ">
+	<ion-list class="text-lang">
+		<ion-item style="text-align: center;font-size: 1em;font-weight: 100;;" class="item-positive item-text-wrap" class="item-stable ">{{$root.translateWord(serviceHeader)}}</ion-item>
+		<div ng-repeat="field in serviceList" class="card" >
+			<ion-item  class="dark item-text-wrap" class="item-stable "
+						ng-click="toggleGroup(field)"
+						ng-class="{active: isGroupShown(field)}">
+				  <i class="icon " ng-class="isGroupShown(field) ? 'ion-chevron-down' : iconLang"></i>
+				&nbsp;
+				{{$root.translateWord(field.name)}}
+			  </ion-item>
+			  <ion-item style="text-align: right" class="item-accordion item-text-wrap" ng-show="isGroupShown(field)">
+				{{$root.translateWord(field.details)}}
+			  </ion-item>
+		</div>
+
+    <ion-list type="card" >
+		<ion-item   style="text-align: center;font-size: 1em;font-weight: 100;;"  class="assertive item-text-wrap" class="item-stable ">{{$root.translateWord(serviceNote)}}</ion-item>
+      </ion-list>
+	</ion-list>
+	</ion-content>
+
+</ion-view>

@@ -1,0 +1,21 @@
+<ion-view cache-view="false"  view-title="{{CustomersInEgypt.header}}">
+   <ion-content  >
+		<ion-list class="text-lang">
+			<div ng-repeat="field in CustomersInEgypt.fields" class="card text-lang">
+			  <ion-item class=" " class="item-stable item-divider item-text-wrap"
+						ng-click="toggleGroup(field)"
+						ng-class="{active: isGroupShown(field)}">
+				  <i class="icon" ng-class="isGroupShown(field) ? 'ion-chevron-down' : iconLang"></i>
+				&nbsp;
+				{{field.name}}
+			  </ion-item>
+			  <ion-item class="item-accordion item-text-wrap"
+						ng-repeat="customer in field.customers"
+						ng-show="isGroupShown(field)">
+				{{customer}}
+			  </ion-item>
+			</div>
+      </ion-list>
+
+  </ion-content>
+</ion-view>

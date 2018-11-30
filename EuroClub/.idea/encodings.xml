@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/css/style.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/js/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/Customers.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/templates/en_US/AboutEuroClubService.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../XApp-0.1/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../XApp-0.1/plugins/android.json" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

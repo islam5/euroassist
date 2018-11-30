@@ -1,0 +1,20 @@
+<ion-view cache-view="false" view-title="{{$root.translateWord('Euro Assist Services')}}">
+  <ion-content class="text-lang" style=" ">
+    <ion-list class="" type="card">
+      <ion-item class="card item-text-wrap dark" ng-repeat="service in EuroInfo.services" href="#/app/service/{{$index}}">
+        {{$root.translateWord(service.name)}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <div class=" row  global-text " ng-show="showRegistButton" style="padding: 5px">
+    <div class="list col" style="position: fixed;bottom: 0px">
+      <div class="row">
+        <button ng-click="goRegForm()" class="button col button-raised button-assertive icon ion-person-add">
+          {{$root.translateWord('Registration Form')}}
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</ion-view>
